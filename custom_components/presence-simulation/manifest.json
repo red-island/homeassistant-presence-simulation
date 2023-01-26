@@ -1,0 +1,13 @@
+{
+  "domain": "presence_simulator",
+  "name": "Presence Simulator",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/presence_simulator",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": ["@red-island"],
+  "iot_class": "calculated"
+}
