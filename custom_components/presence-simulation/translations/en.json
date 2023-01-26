@@ -1,0 +1,43 @@
+{
+    "title": "Presence Simulator",
+    "config": {
+        "abort": {
+            "already_configured": "The instance is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "title": "Choose a name for the Presence Simulator instance",
+                "description": "Pick a name for this instance. You can run several instances of Presence Simulator!",
+                "data": {
+                    "name": "Name"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "Presence Simulator options",
+                "description": "All settings for the Presence Simulator component. Option names correspond with YAML settings. No options are shown if you have the presence_simulator entry defined in your YAML configuration.",
+                "data": {
+                    "away_toggle":"away_toggle: input-boolean indicating away = true",
+                    "automations": "automations: select all automations which shall be simulated",
+                    "lights": "lights: select all lights which shall be simulated",
+                    "interval": "interval - Run every x seconds",
+                    "playback_automation": "playback_automation - Shall past automations be played back",
+                    "playback_days": "playback_days - which day in the past shall be re-played, normally 7 = same day from previous week",
+                    "automation_filter": "automation_filter - which character need to exist in automation message e.g. mqtt - use None to whipe"
+                }
+            },
+            "error": {
+                "option_error": "Invalid option",
+                "entity_missing": "One or more selected entities are missing in Home Assistant"
+            }
+        }
+    }
+}
