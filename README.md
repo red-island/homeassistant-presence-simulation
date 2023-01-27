@@ -10,26 +10,12 @@ If the service is running longer than the number of days defined as the `delta`,
 Supported entities domains:
 - `light`
 - `cover`
-- `media_player`
 - All domains for which entities have status `on` or `off` than can be turned on/off with service `homeassistant.turn_on` and `homeassistant.turn_off` (`automation`, `switch`, `group`...).
 
 # Pre-requisit
 The `history` integration must be activated - [which it is by default](https://www.home-assistant.io/integrations/history/). The period kept in the DB should be bigger than the delta used in the simulation. The default number of days kept is 10 and this [can be configured](https://www.home-assistant.io/integrations/recorder/) with the `recorder` integration.
 
 # Installation
-## Option 1
-- In your Home Assistant configuration directory (`~/.homeassistant` for instance), create a directory `custom_components/presence_simulation` and put the code in it.
-- Restart Home Assistant
-## Option 2
-- Go in your Home Assistant configuration directory (`~/.homeassistant` for instance)
-- `git clone https://github.com/slashback100/presence_simulation.git`. It will create the directory `custom_components/presence_simulation`
-- Restart Home Assistant
-## Option 3 (recommended)
-- Have [HACS](https://hacs.xyz/) installed, this will allow you to easily manage and track updates.
-- Search for "Presence Simulation".
-- Click Install below the found integration.
-- Restart Home Assistant
-
 
 
 ## Take back control
