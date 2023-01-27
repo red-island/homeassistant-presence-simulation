@@ -18,11 +18,10 @@ presence_simulator:
 ```
 
 ### Options
-| option                      | description                                                                                                                                                                                                                   | required | default        | type    |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------- | ------- |
-| `name`                      | The name to display on the automation switch.                                                                                                                                                                                  | False    | default        | string  |
-| `lights`                    | List of light entities for Presence Simulator to automate (may be empty).                                                                                                                                                       | False    | list           | []      |
-                                                                                                 | False    | 0              | integer |
+| option   | description | required | default | type |
+| -------- | ----------- | -------- | ------- | ---- |
+| `name`   | The name to display on the automation switch.  | False    | "default"        | string  |
+| `lights` | List of light entities for Presence Simulator to automate (may be empty).  | False    | []    | list  |
 
 Full example:
 
